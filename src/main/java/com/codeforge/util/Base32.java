@@ -1,4 +1,4 @@
-package com.codeforge;
+package com.codeforge.util;
 
 import cn.hutool.core.text.StrBuilder;
 

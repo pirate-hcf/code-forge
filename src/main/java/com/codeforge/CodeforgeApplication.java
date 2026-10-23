@@ -1,9 +1,15 @@
 package com.codeforge;
 
+import com.codeforge.util.CodeUtil;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
+
 /**
  * Hello world!
  *
  */
+@EnableAsync
+@SpringBootApplication
 public class CodeforgeApplication
 {
     public static void main( String[] args )
