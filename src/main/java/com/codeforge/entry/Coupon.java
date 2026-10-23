@@ -1,4 +1,4 @@
-package com.codeforge.domain.po;
+package com.codeforge.entry;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

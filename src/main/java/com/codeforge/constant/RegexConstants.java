@@ -1,4 +1,4 @@
-package com.codeforge;
+package com.codeforge.constant;
 
 import cn.hutool.core.lang.RegexPool;
 

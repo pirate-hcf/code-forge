@@ -1,8 +1,7 @@
 package com.codeforge.util;
 
-import com.codeforge.BadRequestException;
-import com.codeforge.RegexConstants;
-import com.codeforge.util.Base32;
+import com.codeforge.exception.BadRequestException;
+import com.codeforge.constant.RegexConstants;
 
 /**
  * <h1 style='font-weight:500'>1.兑换码算法说明：</h1>

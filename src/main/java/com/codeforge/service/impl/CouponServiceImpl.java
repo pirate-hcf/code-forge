@@ -3,7 +3,7 @@ package com.codeforge.service.impl;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.codeforge.util.CodeUtil;
-import com.codeforge.domain.po.Coupon;
+import com.codeforge.entry.Coupon;
 import com.codeforge.service.ICouponService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.BoundValueOperations;
@@ -11,9 +11,7 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
 @Service
@@ -45,6 +43,7 @@ public class CouponServiceImpl implements ICouponService {
             String code = CodeUtil.generateCode(serialNum, coupon.getId());
             log.debug("生成兑换码：{}，序列号：{}，券ID:{}", code, serialNum, coupon.getId());
         }
+        log.info("券ID:{}, 发放量:{}, 序列号段:[{}, {}]", coupon.getId(), totalNum, startSerialNum, maxSerialNum);
         // 4.写入Redis ZSet，记录该券对应的最大序列号，用于无库校验
         try {
             redisTemplate.opsForZSet().add(COUPON_RANGE_KEY, coupon.getId().toString(), maxSerialNum);

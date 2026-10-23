@@ -1,4 +1,4 @@
-package com.codeforge;
+package com.codeforge.exception;
 
 import lombok.Getter;
 

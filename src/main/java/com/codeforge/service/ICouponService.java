@@ -1,7 +1,7 @@
 package com.codeforge.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.codeforge.domain.po.Coupon;
+import com.codeforge.entry.Coupon;
 
 /**
  * <p>

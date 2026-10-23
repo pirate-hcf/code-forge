@@ -27,6 +27,13 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <!-- spring boot test (junit-jupiter + mockito) -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <version>${org.springframework.version}</version>
+      <scope>test</scope>
+    </dependency>
     <!--    spring-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
