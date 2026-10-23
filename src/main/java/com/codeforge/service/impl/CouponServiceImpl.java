@@ -1,7 +1,6 @@
 package com.codeforge.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
 import com.codeforge.util.CodeUtil;
 import com.codeforge.entry.Coupon;
 import com.codeforge.service.ICouponService;
@@ -10,10 +9,6 @@ import org.springframework.data.redis.core.BoundValueOperations;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
-
-import java.util.Collection;
-import java.util.Map;
-import java.util.function.Function;
 @Service
 @Slf4j
 public class CouponServiceImpl implements ICouponService {
@@ -53,48 +48,4 @@ public class CouponServiceImpl implements ICouponService {
     }
 
 
-    @Override
-    public boolean saveBatch(Collection<Coupon> entityList, int batchSize) {
-        return false;
-    }
-
-    @Override
-    public boolean saveOrUpdateBatch(Collection<Coupon> entityList, int batchSize) {
-        return false;
-    }
-
-    @Override
-    public boolean updateBatchById(Collection<Coupon> entityList, int batchSize) {
-        return false;
-    }
-
-    @Override
-    public boolean saveOrUpdate(Coupon entity) {
-        return false;
-    }
-
-    @Override
-    public Coupon getOne(Wrapper<Coupon> queryWrapper, boolean throwEx) {
-        return null;
-    }
-
-    @Override
-    public Map<String, Object> getMap(Wrapper<Coupon> queryWrapper) {
-        return null;
-    }
-
-    @Override
-    public <V> V getObj(Wrapper<Coupon> queryWrapper, Function<? super Object, V> mapper) {
-        return null;
-    }
-
-    @Override
-    public BaseMapper<Coupon> getBaseMapper() {
-        return null;
-    }
-
-    @Override
-    public Class<Coupon> getEntityClass() {
-        return null;
-    }
 }

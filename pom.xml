@@ -17,16 +17,9 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <org.projectlombok.version>1.18.34</org.projectlombok.version>
     <hutool.version>5.7.17</hutool.version>
-    <mybatis-plus.version>3.4.3</mybatis-plus.version>
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
     <!-- spring boot test (junit-jupiter + mockito) -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -45,12 +38,6 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-redis</artifactId>
       <version>${org.springframework.version}</version>
-    </dependency>
-    <!-- mybatis plus 管理 -->
-    <dependency>
-      <groupId>com.baomidou</groupId>
-      <artifactId>mybatis-plus-boot-starter</artifactId>
-      <version>${mybatis-plus.version}</version>
     </dependency>
     <!-- lombok 管理 -->
     <dependency>

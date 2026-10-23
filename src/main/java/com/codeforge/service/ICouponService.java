@@ -1,6 +1,5 @@
 package com.codeforge.service;
 
-import com.baomidou.mybatisplus.extension.service.IService;
 import com.codeforge.entry.Coupon;
 
 /**
@@ -8,6 +7,6 @@ import com.codeforge.entry.Coupon;
  * 兑换码 服务类
  * </p>
  */
-public interface ICouponService extends IService<Coupon> {
+public interface ICouponService {
     void asyncGenerateCode(Coupon coupon);
 }
