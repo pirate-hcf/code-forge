@@ -4,7 +4,7 @@ package com.codeforge;
  * Hello world!
  *
  */
-public class App 
+public class CodeforgeApplication
 {
     public static void main( String[] args )
     {
